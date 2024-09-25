@@ -1,0 +1,238 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: #080808;
+    color: rgb(250, 235, 215);
+}
+
+.header {
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#logo {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#logo::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    animation-delay: -4s;
+    animation: 1secase forwards;
+
+}
+
+.nav a {
+    font-size: 15px;
+    color: rgb(240, 248, 255);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 10px;
+    transition: .35;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: hsl(119, 92%, 49%);
+
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    padding: 0 10%;
+}
+
+.home-contact {
+
+    max-width: 600px;
+
+}
+
+.home-contact h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-contact h1::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation-delay: 1s;
+    animation: 1s ease forwards;
+}
+
+.home-contact h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0d00ff;
+}
+
+.home-contact p {
+    font-size: 20px;
+    margin: 20px 0 40px;
+    font-weight: 600;
+
+
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    width: 345px;
+    height: 50px;
+
+
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color: #1a2222;
+    border: 2px solid rgb(0, 255, 255);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+    z-index: 2;
+    overflow: hidden;
+    transition: -5s;
+}
+
+.btn-box a:nth-child(2) {
+    background-color: transparent;
+    color: hwb(180 8% 16%);
+}
+
+.btn-box a:nth-child(2):hover {
+    color: hsl(180, 11%, 7%);
+}
+
+.btn-box a::before {
+    background-color: rgb(26, 230, 230);
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    background-color: hsl(0, 83%, 53%);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+    color: black;
+}
+
+.home-scl {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+
+}
+
+.home-scl a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    color: aqua;
+    text-decoration: none;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-scl a::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0;
+    height: 100%;
+    background-color: #06ebf7;
+    z-index: -1;
+    transition: -5s;
+    /* border-radius: 50%; */
+}
+
+.home-scl a:hover {
+    color: hsl(180, 100%, 1%);
+}
+
+.home-scl a:hover::before {
+    width: 100%;
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0%;
+    right: 35px;
+    width: 500px;
+    height: 80%;
+    margin-top: 5%;
+    border: 2px solid rgb(9, 9, 9);
+    transition: 3s;
+    background: url('sonu6.jpg') no-repeat;
+    border-radius: 55%;
+}
+
+.home-imgHover:hover {
+    background: url('bd513ef3-2a2b-4467-b4cb-82b3a167e300.jpg') no-repeat;
+
+    opacity: 8;
+}
+
+@-o-keyframes showright {
+    100% {
+        width: 0%;
+
+    }
+}
